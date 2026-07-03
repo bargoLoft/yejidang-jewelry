@@ -1,5 +1,5 @@
 import React from 'react';
-import { Baby, Award, Banknote, Watch } from 'lucide-react';
+import { Baby, Award, Banknote, Watch, Sparkles, Heart } from 'lucide-react';
 import './Products.css';
 
 const productsData = [
@@ -30,6 +30,20 @@ const productsData = [
     desc: '평생을 약속하는 아름다운 순간을 빛내줄 다이아몬드와 시계',
     icon: <Watch size={32} />,
     image: 'https://images.unsplash.com/photo-1543294001-f7cd5d7fb516?q=80&w=800&auto=format&fit=crop'
+  },
+  {
+    id: 5,
+    title: '순금 목걸이 & 팔찌',
+    desc: '세련된 디자인과 변치 않는 가치를 지닌 순금 액세서리',
+    icon: <Sparkles size={32} />,
+    image: 'https://images.unsplash.com/photo-1602752250014-4113e65451bf?q=80&w=800&auto=format&fit=crop'
+  },
+  {
+    id: 6,
+    title: '커플링 & 패션 주얼리',
+    desc: '트렌디한 감성과 정교한 디테일이 돋보이는 14K/18K 주얼리',
+    icon: <Heart size={32} />,
+    image: 'https://images.unsplash.com/photo-1515562141207-7a8ea4114e17?q=80&w=800&auto=format&fit=crop'
   }
 ];
 
