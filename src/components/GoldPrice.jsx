@@ -80,30 +80,32 @@ const GoldPrice = () => {
             <span className="price-date">{dateString}</span>
           </div>
 
-          <div className="price-cards">
-            {priceDataList.map((item, index) => (
-              <div key={index} className="price-card">
-                <div className="price-card-title">{item.type}</div>
-                <div className="price-row buy">
-                  <span>살 때 (Buy)</span>
-                  <span>{item.buy} 원</span>
+          <div className="price-content-grid">
+            <div className="price-cards">
+              {priceDataList.map((item, index) => (
+                <div key={index} className="price-card">
+                  <div className="price-card-title">{item.type}</div>
+                  <div className="price-row buy">
+                    <span>살 때 (Buy)</span>
+                    <span>{item.buy} 원</span>
+                  </div>
+                  <div className="price-row sell">
+                    <span>팔 때 (Sell)</span>
+                    <span>{item.sell} 원</span>
+                  </div>
                 </div>
-                <div className="price-row sell">
-                  <span>팔 때 (Sell)</span>
-                  <span>{item.sell} 원</span>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="chart-container">
-            <h4>주간 금 시세 변동 추이</h4>
-            <div style={{ height: '300px', width: '100%', display: 'flex', justifyContent: 'center' }}>
-              <Line options={options} data={data} />
+              ))}
             </div>
-            <p style={{ textAlign: 'center', marginTop: '15px', color: 'var(--color-gray)', fontSize: '0.85rem' }}>
-              * 위 시세는 참고용 가상 데이터이며 실제 매장 방문 시 시세와 다를 수 있습니다.
-            </p>
+
+            <div className="chart-container">
+              <h4>주간 금 시세 변동 추이</h4>
+              <div style={{ height: '300px', width: '100%', display: 'flex', justifyContent: 'center' }}>
+                <Line options={options} data={data} />
+              </div>
+              <p style={{ textAlign: 'center', marginTop: '15px', color: 'var(--color-gray)', fontSize: '0.85rem' }}>
+                * 위 시세는 참고용 가상 데이터이며 실제 매장 방문 시 시세와 다를 수 있습니다.
+              </p>
+            </div>
           </div>
         </div>
       </div>

@@ -32,11 +32,16 @@
   font-size: 0.95rem;
 }
 
-.price-cards {
+.price-content-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  margin-bottom: 40px;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+}
+
+.price-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .price-card {
@@ -93,8 +98,8 @@
   text-align: center;
 }
 
-@media (max-width: 768px) {
-  .price-cards {
+@media (max-width: 992px) {
+  .price-content-grid {
     grid-template-columns: 1fr;
   }
   

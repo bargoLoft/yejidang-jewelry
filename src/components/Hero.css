@@ -1,6 +1,6 @@
 .hero {
-  height: 100vh;
-  min-height: 600px;
+  height: 65vh;
+  min-height: 500px;
   background: linear-gradient(to right, rgba(10, 17, 40, 0.9), rgba(10, 17, 40, 0.6)), url('https://images.unsplash.com/photo-1599643478524-fb66f70d00f0?q=80&w=2000&auto=format&fit=crop') center/cover;
   display: flex;
   align-items: center;
