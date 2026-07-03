@@ -11,7 +11,7 @@ const About = () => {
         <div className="about-grid">
           <div className="about-image-wrapper">
             <img 
-              src="https://images.unsplash.com/photo-1556157382-97eda2d62296?w=800" 
+              src="/ceo.png" 
               alt="예지당 대표 박옥례" 
               className="about-image"
             />
