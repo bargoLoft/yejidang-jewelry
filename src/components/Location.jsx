@@ -34,7 +34,7 @@ const Location = () => {
           <div className="map-container">
             <iframe 
               width="100%" 
-              height="400" 
+              height="250" 
               style={{ border: 0, borderRadius: '8px' }} 
               src="https://maps.google.com/maps?q=서울시%20종로구%20종로3가%209&t=&z=17&ie=UTF8&iwloc=&output=embed" 
               allowFullScreen

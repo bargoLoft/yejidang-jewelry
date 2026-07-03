@@ -99,7 +99,7 @@ const GoldPrice = () => {
 
             <div className="chart-container">
               <h4>주간 금 시세 변동 추이</h4>
-              <div style={{ height: '300px', width: '100%', display: 'flex', justifyContent: 'center' }}>
+              <div style={{ height: '200px', width: '100%', display: 'flex', justifyContent: 'center' }}>
                 <Line options={options} data={data} />
               </div>
               <p style={{ textAlign: 'center', marginTop: '15px', color: 'var(--color-gray)', fontSize: '0.85rem' }}>
