@@ -1,27 +1,6 @@
 import React from 'react';
 import { TrendingUp } from 'lucide-react';
-import {
-  Chart as ChartJS,
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  LineElement,
-  Title,
-  Tooltip,
-  Legend,
-} from 'chart.js';
-import { Line } from 'react-chartjs-2';
 import './GoldPrice.css';
-
-ChartJS.register(
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  LineElement,
-  Title,
-  Tooltip,
-  Legend
-);
 
 const priceDataList = [
   { type: '순금 (24K)', buy: '382,000', sell: '345,000' },
@@ -29,41 +8,7 @@ const priceDataList = [
   { type: '14K', buy: '제품시세', sell: '197,000' },
 ];
 
-const labels = ['월', '화', '수', '목', '금', '토', '오늘'];
 
-const data = {
-  labels,
-  datasets: [
-    {
-      label: '순금(24K) 살 때 시세 추이 (원/3.75g)',
-      data: [375000, 376000, 378000, 380000, 381000, 382000, 382000],
-      borderColor: '#D4AF37',
-      backgroundColor: 'rgba(212, 175, 55, 0.5)',
-      tension: 0.3,
-      borderWidth: 3,
-      pointBackgroundColor: '#0A1128',
-    },
-  ],
-};
-
-const options = {
-  responsive: true,
-  plugins: {
-    legend: {
-      position: 'top',
-    },
-  },
-  scales: {
-    y: {
-      min: 370000,
-      ticks: {
-        callback: function(value) {
-          return value.toLocaleString() + '원';
-        }
-      }
-    }
-  }
-};
 
 const GoldPrice = () => {
   const today = new Date();
@@ -96,16 +41,9 @@ const GoldPrice = () => {
                 </div>
               ))}
             </div>
-
-            <div className="chart-container">
-              <h4>주간 금 시세 변동 추이</h4>
-              <div style={{ height: '200px', width: '100%', display: 'flex', justifyContent: 'center' }}>
-                <Line options={options} data={data} />
-              </div>
-              <p style={{ textAlign: 'center', marginTop: '15px', color: 'var(--color-gray)', fontSize: '0.85rem' }}>
-                * 위 시세는 참고용 가상 데이터이며 실제 매장 방문 시 시세와 다를 수 있습니다.
-              </p>
-            </div>
+            <p style={{ textAlign: 'center', marginTop: '15px', color: 'var(--color-gray)', fontSize: '0.85rem', gridColumn: '1 / -1' }}>
+              * 위 시세는 참고용 가상 데이터이며 실제 매장 방문 시 시세와 다를 수 있습니다.
+            </p>
           </div>
         </div>
       </div>

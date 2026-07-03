@@ -2,7 +2,6 @@ import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
-import Products from './components/Products';
 import GoldPrice from './components/GoldPrice';
 import Location from './components/Location';
 import Footer from './components/Footer';
@@ -15,7 +14,6 @@ function App() {
       <main>
         <Hero />
         <About />
-        <Products />
         <GoldPrice />
         <Location />
       </main>

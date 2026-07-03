@@ -22,6 +22,7 @@
   display: block;
   object-fit: contain;
   aspect-ratio: auto;
+  filter: grayscale(100%);
 }
 
 .about-experience {
