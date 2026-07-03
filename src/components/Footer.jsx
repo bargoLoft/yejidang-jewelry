@@ -1,5 +1,5 @@
 import React from 'react';
-import { Gem } from 'lucide-react';
+import LogoIcon from './LogoIcon';
 import './Footer.css';
 
 const Footer = () => {
@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="footer-grid">
           <div className="footer-brand">
             <div className="logo">
-              <Gem size={28} color="var(--color-gold)" style={{ marginRight: '10px' }} />
+              <LogoIcon size={32} style={{ marginRight: '10px' }} />
               예지당<span>.</span>
             </div>
             <p>귀금속 · 시계 · 예물 전문점<br/>아름다운 당신을 더욱 빛나게 합니다.</p>

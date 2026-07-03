@@ -60,6 +60,17 @@ const About = () => {
               <p>TEL : (02) 2273-6464<br/>FAX : (02) 2273-6464<br/>H.P : 010-8638-7821 / 010-3265-8294</p>
             </div>
           </div>
+          <div style={{ gridColumn: '1 / -1', marginTop: '10px' }}>
+            <iframe 
+              width="100%" 
+              height="350" 
+              style={{ border: 0, borderRadius: '8px' }} 
+              src="https://maps.google.com/maps?q=서울시%20종로구%20종로3가%209&t=&z=17&ie=UTF8&iwloc=&output=embed" 
+              allowFullScreen
+              loading="lazy"
+              title="예지당 위치"
+            ></iframe>
+          </div>
         </div>
       </div>
     </section>

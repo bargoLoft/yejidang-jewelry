@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Gem } from 'lucide-react';
+import LogoIcon from './LogoIcon';
 import './Header.css';
 
 const Header = () => {
@@ -24,7 +24,7 @@ const Header = () => {
     <header className={`header ${scrolled ? 'scrolled' : ''}`}>
       <div className="container header-container">
         <a href="#" className="logo" onClick={(e) => { e.preventDefault(); scrollTo('hero'); }}>
-          <Gem size={28} color="var(--color-gold)" />
+          <LogoIcon size={32} />
           예지당<span>.</span>
         </a>
         
