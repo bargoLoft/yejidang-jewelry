@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+
+:root {
+  /* Color Palette */
+  --color-gold: #D4AF37;
+  --color-gold-light: #F4E5B8;
+  --color-gold-dark: #B5952F;
+  
+  --color-navy: #0A1128;
+  --color-navy-light: #1A2445;
+  
+  --color-white: #FFFFFF;
+  --color-off-white: #F8F9FA;
+  
+  --color-charcoal: #333333;
+  --color-gray: #666666;
+  --color-light-gray: #E0E0E0;
+
+  /* Typography */
+  --font-sans: 'Noto Sans KR', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+  
+  /* Layout */
+  --container-width: 1200px;
+  --header-height: 80px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-charcoal);
+  background-color: var(--color-off-white);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  color: var(--color-navy);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--color-gold);
+  margin: 15px auto 0;
+}
+
+/* Utilities */
+.text-gold { color: var(--color-gold); }
+.text-navy { color: var(--color-navy); }
+.bg-navy { background-color: var(--color-navy); color: var(--color-white); }
+.bg-navy h2, .bg-navy h3 { color: var(--color-white); }
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+/* Hover effects */
+.hover-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}

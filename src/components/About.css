@@ -1,0 +1,122 @@
+.about {
+  background-color: var(--color-white);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.about-image-wrapper {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.about-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 3/4;
+}
+
+.about-experience {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  background-color: var(--color-gold);
+  color: var(--color-navy);
+  padding: 30px;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.about-experience .years {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.about-experience .text {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.about-content h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--color-navy);
+}
+
+.about-content p {
+  margin-bottom: 20px;
+  color: var(--color-gray);
+  font-size: 1.1rem;
+}
+
+.about-signature {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-style: italic;
+  color: var(--color-gold);
+  margin-top: 30px;
+}
+
+.location-info {
+  margin-top: 60px;
+  background-color: var(--color-off-white);
+  padding: 40px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.location-info h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.info-icon {
+  color: var(--color-gold);
+  margin-top: 3px;
+}
+
+.info-text strong {
+  display: block;
+  color: var(--color-navy);
+  margin-bottom: 5px;
+}
+
+.info-text p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+@media (max-width: 992px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-experience {
+    bottom: 20px;
+    right: 20px;
+  }
+}
